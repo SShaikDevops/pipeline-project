@@ -1,0 +1,11 @@
+pipeline {
+agent any
+   stages{
+     stage("code pull from the git"){
+     steps {
+     git branch:'main', url:'https://github.com/SShaikDevops/pipeline-project.git'
+     }
+    }
+   }
+  }
+     
